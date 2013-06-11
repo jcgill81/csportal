@@ -1,6 +1,6 @@
 module ApplicationHelper
 
- # Returns the full title on a per-page basis.
+ # Takes input from page and tests content, adds if not blank, per page.
   def full_title(page_title)
     base_title = "CS Portal"
     if page_title.empty?
