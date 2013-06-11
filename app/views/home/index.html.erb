@@ -1,77 +1,71 @@
 <% provide(:title, 'Dashboard') %>
 <!DOCTYPE html>
-<html>
-  <head>
-  </head>
-  <body>
-        <div id="mainNav" class="flex column">
-          <a class="flex1 navLink" href="/home/release"><div class="">LSM Release Schedule</div></a>
-          
-          <a class="flex1 navLink" href="/home/active"><div class="">Active Dev Projects</div></a>
-          
-          <a class="flex1 navLink" href="https://docs.google.com/a/moovweb.com/spreadsheet/ccc?key=0Anjwwj6MxFIsdFlESVJiRllWWkEwNnZfUGIwVFNUa0E#gid=0" target="_blank">
-            <div class="">Upcoming On-Call Schedule</div>
-          </a>
+  <div id="mainNav" class="flex column">
+    <a class="flex1 navLink" href="/home/release"><div class="">LSM Release Schedule</div></a>
+    
+    <a class="flex1 navLink" href="/home/active"><div class="">Active Dev Projects</div></a>
+    
+    <a class="flex1 navLink" href="https://docs.google.com/a/moovweb.com/spreadsheet/ccc?key=0Anjwwj6MxFIsdFlESVJiRllWWkEwNnZfUGIwVFNUa0E#gid=0" target="_blank">
+      <div class="">Upcoming On-Call Schedule</div>
+    </a>
 
-          <a id="apollo" class="flex1 navLink" href="https://console.moovweb.com/" target="_blank">
-             <div class="">Apollo</div>
-          </a>
-          
-          <a class="flex1 navLink logo-align" href="https://moovwebconfluence.atlassian.net" target="_blank">
-              <div class=""><img id ="conf" class="" src="assets/confluence_logo.png"></div>
-            </a>
-          
-          <a id="jira" class="flex1 navLink logo-align" href="https://moovweb.atlassian.net" target="_blank">
-            <div class=""><img id ="jira" class="" src="assets/jira_logo.png"></div>
-          </a>
-        </div>
-        <div id="img_holder" class="flex column">
-          <div>
-            <a class="twitter-timeline" href="https://twitter.com/Moovweb" data-widget-id="344307862346006529">Tweets by @Moovweb</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
-        </div>
-        <div id="on-call" class="flex column">
-        <div class="table-caption">After Hours On Call List:</div>
-        <div class="flex row box horizontal on-call-list">
-          <div class="people column flex">
-            <div class="name">1st</div>
-            <div class="name">2nd</div>
-            <div class="name">3rd</div>
-            <div class="name">4th</div>
-            <div class="name">Phil</div>
-          </div>
-          <div class="tele column flex">
-            <div class="number">###-###-####</div>
-            <div class="number">###-###-####</div>
-            <div class="number">###-###-####</div>
-            <div class="number">###-###-####</div>
-            <div class="number">###-###-####</div>
-          </div>
-          <div class="mail column flex">
-            <div class="email"><a href="mailto:emailm@moovweb.com">1st@moovweb.com</a></div>
-            <div class="email"><a href="mailto:emailm@moovweb.com">2nd@moovweb.com</a></div>
-            <div class="email"><a href="mailto:emailm@moovweb.com">3rd@moovweb.com</a></div>
-            <div class="email"><a href="mailto:emailm@moovweb.com">4th@moovweb.com</a></div>
-            <div class="email"><a href="mailto:emailm@moovweb.com">5th@moovweb.com</a></div>
-          </div>     
-        </div>
-        <div class="table-caption">Ops On Call</div>
-        <div class="on-call-list row flex box horizontal">
-          <div class="people column flex flex1">
-            <div class="name">Operations</div>
-            <div class="name">Platform</div>
-          </div>
-          <div class="tele flex flex1 column">
-            <div class="number">###-###-####</div>
-            <div class="number">###-###-####</div>
-          </div>
-          <div class ="mail flex flex1 column">
-            <div class="email"><a href="mailto:emailm@moovweb.com">ops@moovweb.com</a></div>
-            <div class="email"><a href="mailto:emailm@moovweb.com">platform@moovweb.com</a></div>
-          </div>
-        </div>
-        </div>
-      </div>
-  </body>
-</html>
+    <a id="apollo" class="flex1 navLink" href="https://console.moovweb.com/" target="_blank">
+       <div class="">Apollo</div>
+    </a>
+    
+    <a class="flex1 navLink logo-align" href="https://moovwebconfluence.atlassian.net" target="_blank">
+        <div class=""><img id ="conf" class="" src="assets/confluence_logo.png"></div>
+      </a>
+    
+    <a id="jira" class="flex1 navLink logo-align" href="https://moovweb.atlassian.net" target="_blank">
+      <div class=""><img id ="jira" class="" src="assets/jira_logo.png"></div>
+    </a>
+  </div>
+  <div id="feed_holder" class="flex column">
+    <div>
+      <a class="twitter-timeline" href="https://twitter.com/Moovweb" data-widget-id="344307862346006529">Tweets by @Moovweb</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+  <div id="on-call" class="flex column">
+  <div class="table-caption">After Hours On Call List:</div>
+  <div class="flex row box horizontal on-call-list">
+    <div class="people column flex">
+      <div class="name">1st</div>
+      <div class="name">2nd</div>
+      <div class="name">3rd</div>
+      <div class="name">4th</div>
+      <div class="name">Phil</div>
+    </div>
+    <div class="tele column flex">
+      <div class="number">###-###-####</div>
+      <div class="number">###-###-####</div>
+      <div class="number">###-###-####</div>
+      <div class="number">###-###-####</div>
+      <div class="number">###-###-####</div>
+    </div>
+    <div class="mail column flex">
+      <div class="email"><a href="mailto:emailm@moovweb.com">1st@moovweb.com</a></div>
+      <div class="email"><a href="mailto:emailm@moovweb.com">2nd@moovweb.com</a></div>
+      <div class="email"><a href="mailto:emailm@moovweb.com">3rd@moovweb.com</a></div>
+      <div class="email"><a href="mailto:emailm@moovweb.com">4th@moovweb.com</a></div>
+      <div class="email"><a href="mailto:emailm@moovweb.com">5th@moovweb.com</a></div>
+    </div>     
+  </div>
+  <div class="table-caption">Ops On Call</div>
+  <div class="on-call-list row flex box horizontal">
+    <div class="people column flex flex1">
+      <div class="name">Operations</div>
+      <div class="name">Platform</div>
+    </div>
+    <div class="tele flex flex1 column">
+      <div class="number">###-###-####</div>
+      <div class="number">###-###-####</div>
+    </div>
+    <div class ="mail flex flex1 column">
+      <div class="email"><a href="mailto:emailm@moovweb.com">ops@moovweb.com</a></div>
+      <div class="email"><a href="mailto:emailm@moovweb.com">platform@moovweb.com</a></div>
+    </div>
+  </div>
+  </div>
+</div>
