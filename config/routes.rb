@@ -1,4 +1,7 @@
 Csportal::Application.routes.draw do
+  resources :on_calls
+
+
   get "home/index"
 
   # The priority is based upon order of creation:
