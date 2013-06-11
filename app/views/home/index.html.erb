@@ -1,23 +1,13 @@
+<% provide(:title, 'Dashboard') %>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CS IN-FLIGHT DASH</title>
-    <link rel="stylesheet" type="text/css" href="assets/index.css" media="screen"/> 
   </head>
   <body>
-    <div class='header'>
-      <div class="logo">
-        <a href="http://www.moovweb.com" id="logo-image"></a>
-        v.1
-      </div>
-      <div id='h_logo'></div>
-        <h2>This will one day hold all inflight information for Client Success projects</h2>
-    </div>
-      <div class="mainWrapper flex box">
         <div id="mainNav" class="flex column">
-          <a class="flex1 navLink"><div class="">LSM Release Schedule</div></a>
+          <a class="flex1 navLink" href="/home/release"><div class="">LSM Release Schedule</div></a>
           
-          <a class="flex1 navLink"><div class="">Active Dev Projects</div></a>
+          <a class="flex1 navLink" href="/home/active"><div class="">Active Dev Projects</div></a>
           
           <a class="flex1 navLink" href="https://docs.google.com/a/moovweb.com/spreadsheet/ccc?key=0Anjwwj6MxFIsdFlESVJiRllWWkEwNnZfUGIwVFNUa0E#gid=0" target="_blank">
             <div class="">Upcoming On-Call Schedule</div>

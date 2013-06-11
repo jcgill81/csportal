@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Csportal</title>
+  <title>CS Portal | <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+<header>
+	<div class="logo">
+        <a href="http://www.moovweb.com" id="logo-image"></a>
+        v.1
+	</div>
+	<div id='h_logo'></div>
+		<h2>This will one day hold all inflight information for Client Success projects</h2>
+</header>
 <body>
+	<div class="mainWrapper flex box">
 
-<%= yield %>
+		<%= yield %>
+
+	</div>
 
 </body>
 </html>
