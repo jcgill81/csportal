@@ -1,8 +1,8 @@
 Csportal::Application.routes.draw do
-  get "home/index"
-  get "home/release"
-  get "home/active"
 
+  match '/release',    to: 'home#release'
+  match '/active',    to: 'home#active'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
