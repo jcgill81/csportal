@@ -6,24 +6,10 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<header>
-	<div class="logo">
-        <%= link_to "", 'http://www.moovweb.com', id: "logo-image" %>
-	</div>
-	<%= link_to "", '/', id: "h_logo" %>
-		<h2>This will one day hold all inflight information for Client Success projects</h2>
-</header>
 <body>
+	<%= render 'layouts/header' %>
 	<div class="mainWrapper flex box">
-		<div id="mainNav" class="flex column">
-		    <%= link_to "LSM Release Schedule", '/home/release', class: "flex1 navLink" %>
-		    <%= link_to "Active Dev Projects", '/home/active', class: "flex1 navLink" %>
-		    <%= link_to "Upcoming On-Call Schedule", 'https://docs.google.com/a/moovweb.com/spreadsheet/ccc?key=0Anjwwj6MxFIsdFlESVJiRllWWkEwNnZfUGIwVFNUa0E#gid=0', class: "flex1 navLink", target: "_blank" %>
-		    <%= link_to "Apollo", 'https://console.moovweb.com/', class: "flex1 navLink", target: "_blank" %>
-		    <%= link_to image_tag('/assets/confluence_logo.png', id: "conf"), 'https://moovwebconfluence.atlassian.net', class: "flex1 navLink", target: "_blank" %>
-		    <%= link_to image_tag('/assets/jira_logo.png', id: "jira"), 'https://moovwebconfluence.atlassian.net', class: "flex1 navLink", target: "_blank" %>
-		 </div>
-		  
+		<%= render 'layouts/nav' %>
 		<%= yield %>
 
 	</div>
