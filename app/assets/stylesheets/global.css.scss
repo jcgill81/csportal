@@ -1,3 +1,6 @@
+@import "compass";
+
+
 body{
 	margin: 0px !important;
 
@@ -19,11 +22,13 @@ h2 {
 
 a {
 	text-decoration: none;
+	& :hover {
+		background: #E6E6E6;
+		text-decoration: none;
+	}
 }
 
-a:hover {
-	background: #E6E6E6;
-}
+
 
 .hide {
 	display:none !important;
