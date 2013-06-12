@@ -1,8 +1,13 @@
 Csportal::Application.routes.draw do
 
+  get "logins/new"
+
+  get "login/new"
+
   match '/release',    to: 'home#release'
   match '/active',    to: 'home#active'
   match '/oncall',    to: 'home#oncall'
+  match 'signup',     to: 'Login#new'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
