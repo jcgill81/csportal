@@ -1,8 +1,6 @@
-@import "compass";
-
 
 body{
-	margin: 0px !important;
+	margin: 0px;
 
 }
 
@@ -20,14 +18,12 @@ h2 {
 	font-color: #374F56;
 }
 
-a {
+.navLink {
 	text-decoration: none;
-	& :hover {
+	&:hover {
 		background: #E6E6E6;
-		text-decoration: none;
 	}
 }
-
 
 
 .hide {
