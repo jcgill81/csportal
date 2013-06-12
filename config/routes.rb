@@ -2,6 +2,7 @@ Csportal::Application.routes.draw do
 
   match '/release',    to: 'home#release'
   match '/active',    to: 'home#active'
+  match '/oncall',    to: 'home#oncall'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
