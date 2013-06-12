@@ -1,0 +1,35 @@
+header {
+	margin: 5px;
+	
+	#h_logo {
+	background:url("alt-title.png");
+	width: 490px;
+	height:75px;
+	display: block;
+	font-family: times, serif;
+	}
+
+	.logo {
+	display: inline-block;
+	width: 165px;
+	height: 30px;
+	margin-top: 20px;
+	margin-right: 20px;
+	color: transparent;
+	text-indent: -9999px;
+	overflow: hidden;
+	float: right;
+	}
+
+	#logo-image {
+	background: url("//assets.moovweb.net/moovweb-marketing/corpsite-prod/v118/images/d_sprite.png") no-repeat 0px -676px;
+	height: 22px;
+	width: 162px;
+	display: block;
+	}
+
+}
+
+footer {
+		margin:10px;
+}
