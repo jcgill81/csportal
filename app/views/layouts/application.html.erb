@@ -16,26 +16,13 @@
 <body>
 	<div class="mainWrapper flex box">
 		<div id="mainNav" class="flex column">
-		    <a class="flex1 navLink" href="/home/release"><div class="">LSM Release Schedule</div></a>
-		    
-		    <a class="flex1 navLink" href="/home/active"><div class="">Active Dev Projects</div></a>
-		    
-		    <a class="flex1 navLink" href="https://docs.google.com/a/moovweb.com/spreadsheet/ccc?key=0Anjwwj6MxFIsdFlESVJiRllWWkEwNnZfUGIwVFNUa0E#gid=0" target="_blank">
-		      <div class="">Upcoming On-Call Schedule</div>
-		    </a>
-
-		    <a id="apollo" class="flex1 navLink" href="https://console.moovweb.com/" target="_blank">
-		       <div class="">Apollo</div>
-		    </a>
-		    
-		    <a class="flex1 navLink logo-align" href="https://moovwebconfluence.atlassian.net" target="_blank">
-		        <div class=""><img id ="conf" class="" src="/assets/confluence_logo.png"></div>
-		      </a>
-		    
-		    <a id="jira" class="flex1 navLink logo-align" href="https://moovweb.atlassian.net" target="_blank">
-		      <div class=""><img id ="jira" class="" src="/assets/jira_logo.png"></div>
-		    </a>
-		  </div>
+		    <%= link_to "LSM Release Schedule", '/home/release', class: "flex1 navLink" %>
+		    <%= link_to "Active Dev Projects", '/home/active', class: "flex1 navLink" %>
+		    <%= link_to "Upcoming On-Call Schedule", 'https://docs.google.com/a/moovweb.com/spreadsheet/ccc?key=0Anjwwj6MxFIsdFlESVJiRllWWkEwNnZfUGIwVFNUa0E#gid=0', class: "flex1 navLink", target: "_blank" %>
+		    <%= link_to "Apollo", 'https://console.moovweb.com/', class: "flex1 navLink", target: "_blank" %>
+		    <%= link_to image_tag('/assets/confluence_logo.png', id: "conf"), 'https://moovwebconfluence.atlassian.net', class: "flex1 navLink", target: "_blank" %>
+		    <%= link_to image_tag('/assets/jira_logo.png', id: "jira"), 'https://moovwebconfluence.atlassian.net', class: "flex1 navLink", target: "_blank" %>
+		 </div>
 		  
 		<%= yield %>
 
