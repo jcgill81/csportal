@@ -1,6 +1,5 @@
 .head {
-	padding: 10px;
-	height: 80px;
+	/*padding: 10px;*/
 
 	#h_logo {
 		background:url("alt-title.png");
@@ -27,6 +26,10 @@
 		height: 22px;
 		width: 162px;
 		display: block;
+	}
+
+	#mainNav {
+		width: 100%;
 	}
 }
 

@@ -1,8 +1,14 @@
 Csportal::Application.routes.draw do
 
-  match '/release',    to: 'home#release'
+  get "on_call/new"
+
+  get "on_call/edit"
+
+  match '/release',   to: 'home#release'
   match '/active',    to: 'home#active'
   match '/oncall',    to: 'home#oncall'
+  match '/add',       to: 'oncall#new'
+  match '/modify',     to: 'oncal#edit'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
