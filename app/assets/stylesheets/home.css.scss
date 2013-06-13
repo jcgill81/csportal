@@ -18,47 +18,31 @@ body {
 	#dev, #ops {
 	border: 1px solid black;
 	margin: 20px;
-	padding: 10px;
-	/*box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);*/
-	min-width: 450px;
-	width: 50%;
+	padding: 0 0 10px 10px;
+	box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);
 	height: auto;
 	}
 
 	#left, #right {
 		margin: 20px;
-		width: 500px;
+		min-width: 400px;
 	}
 
-	.people{
-	width: 25%;
+	.people, .tele, .mail {
+	padding-right: 20px;
 	}
 
-	.tele{
-	width: 25%;
-	}
-
-	.mail{
-	width: 50%;
+	.name, .number, .email {
+	padding-top: 10px;
 	}
 
 	.name {
-	padding-top: 10px;
-	font-weight: bold;
+	font-style: bold;
 	}
 
 	.number{
-	padding-top:10px;
 	font-style: italic;
-	}
 
-	.email{
-	padding-top:10px;
-
-	}
-
-	.table-caption{
-	padding: 10px;
 	}
 }
 
