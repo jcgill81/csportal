@@ -8,7 +8,7 @@
   </div>
   <div id="right" class="column">
     Development & Project Management
-    <div id="dev" class="box">
+    <div id="dev" class="box flex">
         <div class="people">
           <div class="name">Very Long Name</div>
           <div class="name">2nd</div>
@@ -23,27 +23,41 @@
           <div class="number">###-###-####</div>
           <div class="number">###-###-####</div>
         </div>
-        <div class="mail flex column vertical">
-          <%= link_to "1st@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+        <div class="mail box flex column">
+          <div id="1st">
+            <%= link_to "1st@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+          </div>
+          <div id="2nd">
           <%= link_to "2nd@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+          </div>
+          <div id="3rd">
           <%= link_to "3rd@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+          </div>
+          <div id="4th">
           <%= link_to "4th@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+          </div>
+          <div id="5th">
           <%= link_to "5th@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+          </div>
         </div>
     </div>
     Operations
-    <div id="ops" class="box">
-      <div class="people">
+    <div id="ops" class="box flex row">
+      <div class="people column">
         <div class="name">Operations</div>
         <div class="name">Platform</div>
       </div>
-      <div class="tele">
+      <div class="tele column">
         <div class="number">###-###-####</div>
         <div class="number">###-###-####</div>
       </div>
-      <div class ="mail flex column">
-        <%= link_to "ops@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
-        <%= link_to "platform@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+      <div class ="mail column">
+        <div id="opsM">
+          <%= link_to "ops@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+        </div>
+        <div>
+          <%= link_to "platform@moovweb.com", 'mailto:emailm@moovweb.com', class: "email" %>
+        </div>
       </div>
     </div>
   </div>

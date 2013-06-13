@@ -11,6 +11,7 @@ resources :logins
   match '/release',   to: 'home#release'
   match '/active',    to: 'home#active'
   match '/oncall',    to: 'home#oncall'
+  match '/whose',   to: 'home#whose'
   match '/add',       to: 'oncall#new'
   match '/modify',     to: 'oncal#edit'
   match '/signup',     to: 'logins#new'

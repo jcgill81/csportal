@@ -4,15 +4,16 @@
 	</div>
 	<%= link_to "", '/', id: "h_logo" %>
 
-	<div id="mainNav" >
-		<ul id="navList">
-	    <li><%= link_to "LSM Release Schedule", release_path, class: "navLink" %></li>
-	    <li><%= link_to "Active Dev Projects", active_path, class: "navLink" %></li>
-	    <li><%= link_to "Upcoming On-Call Schedule", oncall_path, class: "navLink" %></li>
-	    <li><%= link_to "Apollo", 'https://console.moovweb.com/', class: "navLink", target: "_blank" %></li>
-	    <li><%= link_to "Confluence", 'https://moovwebconfluence.atlassian.net', class: "navLink", target: "_blank" %></li>
-	    <li><%= link_to "Jira", 'https://moovwebconfluence.atlassian.net', class: "navLink", target: "_blank" %><li>
-	    </ul>
+	<div id="mainNav" class="box flex row" >
+		<div id="navList">
+	    <%= link_to "LSM Release Schedule", release_path, class: "navLink" %>
+	    <%= link_to "Active Dev Projects", active_path, class: "navLink" %>
+	    <%= link_to "On-Call Schedule", oncall_path, class: "navLink" %>
+	    <%= link_to "Whose Project Is It?", whose_path, class: "navLink" %>
+	    <%= link_to "Apollo", 'https://console.moovweb.com/', class: "navLink", target: "_blank" %>
+	    <%= link_to "Confluence", 'https://moovwebconfluence.atlassian.net', class: "navLink", target: "_blank" %>
+	    <%= link_to "Jira", 'https://moovwebconfluence.atlassian.net', class: "navLink", target: "_blank" %>
+	    </div>
  	</div>
  	
 </header>

@@ -7,5 +7,8 @@ class HomeController < ApplicationController
 
   def active
   end
+
+  def whose
+  end
   
 end
