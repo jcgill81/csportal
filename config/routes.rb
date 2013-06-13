@@ -13,7 +13,7 @@ resources :logins
   match '/oncall',    to: 'home#oncall'
   match '/add',       to: 'oncall#new'
   match '/modify',     to: 'oncal#edit'
-  match '/signup',     to: 'logins#signup'
+  match '/signup',     to: 'logins#new'
 
   
   # The priority is based upon order of creation:

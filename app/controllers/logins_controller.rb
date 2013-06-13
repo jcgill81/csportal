@@ -5,6 +5,7 @@ class LoginsController < ApplicationController
   end
 
   def new
+  	@login = Login.new
   end
 
   def signup
