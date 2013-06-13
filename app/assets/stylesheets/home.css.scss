@@ -2,7 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+@import "bootstrap";
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
 
@@ -53,3 +58,12 @@ body {
 	}
 }
 
+
+.debug_dump {
+	padding: 10px;
+	clear: both;
+	float: left;
+	width: 100%;
+	margin: 45px;
+	@include box_sizing;
+}

@@ -1,5 +1,5 @@
 Csportal::Application.routes.draw do
-
+resources :logins
   get "logins/new"
 
   get "login/new"
@@ -13,7 +13,7 @@ Csportal::Application.routes.draw do
   match '/oncall',    to: 'home#oncall'
   match '/add',       to: 'oncall#new'
   match '/modify',     to: 'oncal#edit'
-  match 'signup',     to: 'Login#new'
+  match '/signup',     to: 'Login#new'
 
   
   # The priority is based upon order of creation:
