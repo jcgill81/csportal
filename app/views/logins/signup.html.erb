@@ -1,20 +1,20 @@
 <% provide(:title, 'signup') %>
-<h1>Sign Up</h1>
+<h1>Login Creation</h1>
 
 <div id="formholder">
-	<%= form_for(@logins) do |x| %>
-		<%= x.label :name %>
-		<%= x.text_field :name %>
+	<%= form_for(@logins) do |f| %>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
 
-		<%= x.label :email %>
-		<%= x.text_field :email %>
+		<%= f.label :email %>
+		<%= f.text_field :email %>
 
-		<%= x.label :password %>
-		<%= x.text_field :password %>
+		<%= f.label :password %>
+		<%= f.text_field :password %>
 
-		<%= x.label :password_confirmation %>
-		<%= x.text_field :password_confirmation %>
+		<%= f.label :password_confirmation %>
+		<%= f.text_field :password_confirmation %>
 
-		<%= x.submit "Create new Login", id:"subtmit" %>
+		<%= f.submit "Create new Login", id:"subtmit" %>
 	<% end %>
 </div>
