@@ -1,1 +1,3 @@
-￼<%= @login.name %>, <%= @login.email %>
+<% provide(:title, @login.name) %>
+<h1>Displaying db record <%= @login.id %></h1>
+<h2><%= @login.name %>, <%= @login.email %></h2>

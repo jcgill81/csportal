@@ -13,17 +13,21 @@ body {
 
 	#feed_holder {
 		margin-left: 20px;
-		width: 50%;
 	}
 
-	.on-call-list {
+	#dev, #ops {
 	border: 1px solid black;
-	margin: 10px;
+	margin: 20px;
 	padding: 10px;
-	box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);
+	/*box-shadow: inset 0 -2px 2px rgba(0,0,0,0.2);*/
 	min-width: 450px;
 	width: 50%;
 	height: auto;
+	}
+
+	#left, #right {
+		margin: 20px;
+		width: 500px;
 	}
 
 	.people{
