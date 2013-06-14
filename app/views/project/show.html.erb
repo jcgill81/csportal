@@ -2,14 +2,14 @@
 
 
 <% @project.each do |proj| %>
-
-	<div><%= proj.client  %></div>
-	<div><%= proj.name  %></div>
-	<div><%= proj.team  %></div>
-	<div><%= proj.am  %></div>
-	<div><%= proj.pm  %></div>
-	<div><%= proj.qa  %></div>
-	<div><%= proj.conf  %></div>
-	<div><%= proj.jira  %></div>
-
+<div class="box flex column">
+	<div>Client Name: <%= proj.client  %></div>
+	<div>Project Name: <%= proj.name  %></div>
+	<div>Development Team: <%= proj.team  %></div>
+	<div>Account Manager: <%= proj.am  %></div>
+	<div>Project Manager: <%= proj.pm  %></div>
+	<div>QA Engineer: <%= proj.qa  %></div>
+	<div>Confluence Page: <%= proj.conf  %></div>
+	<div>Jira Project: <%= proj.jira  %></div>
+</div>
 <% end %>

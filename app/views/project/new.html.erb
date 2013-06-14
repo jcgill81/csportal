@@ -5,30 +5,30 @@
 <div id="formholder">
 	<%= form_for(@project) do |f| %>
 
-		<%= f.label :client %>
+		<%= f.label :client, "Client Name" %>
 		<%= f.text_field :client %>
 
-		<%= f.label :name %>
+		<%= f.label :name, "Project Name" %>
 		<%= f.text_field :name %>
 
-		<%= f.label :team %>
+		<%= f.label :team, "Development Team" %>
 		<%= f.text_field :team %>
 
-		<%= f.label :am %>
+		<%= f.label :am, "Account Manager" %>
 		<%= f.text_field :am %>
 
-		<%= f.label :pm %>
+		<%= f.label :pm, "Project Manager" %>
 		<%= f.text_field :pm %>
 
-		<%= f.label :qa %>
+		<%= f.label :qa, "QA Engineer" %>
 		<%= f.text_field :qa %>
 
-		<%= f.label :conf %>
+		<%= f.label :conf, "Confluence"%>
 		<%= f.text_field :conf %>		
 
-		<%= f.label :jira %>
+		<%= f.label :jira, "Jira" %>
 		<%= f.text_field :jira %>		
 
-		<%= f.submit "Create new Project", id:"Project" %>
+		<%= f.submit "Create new Project", class:"btn" %>
 	<% end %>
 </div>

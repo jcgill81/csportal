@@ -6,8 +6,15 @@ class ProjectController < ApplicationController
   
 	def new
 		@project = Project.new
-		project.save
 	end
 
+	def create
+    @project = User.new(params[:user])
+    if @project.save
+      # Handle a successful save.
+	else
+    	  render 'new'
+    	end
+	end
 
 end
