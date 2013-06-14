@@ -4,6 +4,7 @@
 
 <div id="formholder">
 	<%= form_for(@project) do |f| %>
+
 		<%= f.label :client %>
 		<%= f.text_field :client %>
 
@@ -20,7 +21,13 @@
 		<%= f.text_field :pm %>
 
 		<%= f.label :qa %>
-		<%= f.text_field :qa %>		
+		<%= f.text_field :qa %>
+
+		<%= f.label :conf %>
+		<%= f.text_field :conf %>		
+
+		<%= f.label :jira %>
+		<%= f.text_field :jira %>		
 
 		<%= f.submit "Create new Project", id:"Project" %>
 	<% end %>

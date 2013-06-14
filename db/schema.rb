@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130614160359) do
+ActiveRecord::Schema.define(:version => 20130614195724) do
 
   create_table "logins", :force => true do |t|
     t.string   "name"
@@ -24,10 +24,14 @@ ActiveRecord::Schema.define(:version => 20130614160359) do
   add_index "logins", ["email"], :name => "index_logins_on_email", :unique => true
 
   create_table "projects", :force => true do |t|
-    t.string   "name"
-    t.string   "pm"
     t.string   "am"
+    t.string   "pm"
     t.string   "qa"
+    t.string   "name"
+    t.string   "client"
+    t.string   "team"
+    t.string   "jira"
+    t.string   "conf"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

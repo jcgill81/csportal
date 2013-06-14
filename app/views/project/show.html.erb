@@ -1,0 +1,15 @@
+<% provide(:title, 'Tostitos') %>
+
+
+<% @project.each do |proj| %>
+
+	<div><%= proj.client  %></div>
+	<div><%= proj.name  %></div>
+	<div><%= proj.team  %></div>
+	<div><%= proj.am  %></div>
+	<div><%= proj.pm  %></div>
+	<div><%= proj.qa  %></div>
+	<div><%= proj.conf  %></div>
+	<div><%= proj.jira  %></div>
+
+<% end %>
