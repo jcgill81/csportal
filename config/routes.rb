@@ -13,7 +13,7 @@ resources :projects
   match '/add',         to: 'oncall#new'
   match '/modify',      to: 'oncal#edit'
   match '/signup',      to: 'logins#new'
-  match '/list',        to: 'projects#new'
+  match '/list',        to: 'project#new'
 
   
   # The priority is based upon order of creation:

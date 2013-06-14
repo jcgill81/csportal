@@ -3,12 +3,12 @@
 <h1>Create new Project Listing</h1>
 
 <div id="formholder">
-	<%= form_for(@login) do |f| %>
-		<%= f.label :name %>
-		<%= f.text_field :name %>
-
+	<%= form_for(@project) do |f| %>
 		<%= f.label :client %>
 		<%= f.text_field :client %>
+
+		<%= f.label :name %>
+		<%= f.text_field :name %>
 
 		<%= f.label :team %>
 		<%= f.text_field :team %>
@@ -20,7 +20,7 @@
 		<%= f.text_field :pm %>
 
 		<%= f.label :qa %>
-		<%= f.text_field :qa %>
+		<%= f.text_field :qa %>		
 
 		<%= f.submit "Create new Project", id:"Project" %>
 	<% end %>
