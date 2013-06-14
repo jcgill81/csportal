@@ -1,5 +1,8 @@
 Csportal::Application.routes.draw do
 resources :logins
+  get "logins/new"
+
+  get "login/new"
 
   get "on_call/new"
 
