@@ -9,6 +9,7 @@ class LoginsController < ApplicationController
   end
 
   def signup
+
   end
   
 end
