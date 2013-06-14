@@ -1,0 +1,27 @@
+
+<% provide(:title, 'New Project') %>
+<h1>Create new Project Listing</h1>
+
+<div id="formholder">
+	<%= form_for(@login) do |f| %>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+
+		<%= f.label :client %>
+		<%= f.text_field :client %>
+
+		<%= f.label :team %>
+		<%= f.text_field :team %>
+
+		<%= f.label :am %>
+		<%= f.text_field :am %>
+
+		<%= f.label :pm %>
+		<%= f.text_field :pm %>
+
+		<%= f.label :qa %>
+		<%= f.text_field :qa %>
+
+		<%= f.submit "Create new Project", id:"Project" %>
+	<% end %>
+</div>
