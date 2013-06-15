@@ -1,9 +1,10 @@
 <header class="head">
-	<div class="logo">
-        <%= link_to "", 'http://www.moovweb.com', id: "logo-image" %>
+	<div id="m_logo">
+    <%= link_to  image_tag("logo.png"), 'http://www.moovweb.com', class: "logo" %>
 	</div>
-	<%= link_to "", '/', id: "h_logo" %>
-
+	<div id="h_logo",>
+		<%= link_to image_tag("alt-title.png"), '/', class: "logo" %>
+	</div>
 	<div id="mainNav" class="box flex row" >
 		<div id="navList">
 	    <%= link_to "LSM Release Schedule", release_path, class: "navLink" %>

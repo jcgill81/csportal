@@ -1,32 +1,20 @@
 .head {
-	/*padding: 10px;*/
-
-	#h_logo {
-		background:url("alt-title.png");
-		height:75px;
-		display: block;
-		font-family: times, serif;
-		margin-bottom: 10px;
-		background-repeat: no-repeat;
-	}
+	padding: 10px;
 
 	.logo {
-		display: inline-block;
-		width: 165px;
-		height: 30px;
-		margin-top: 20px;
-		margin-right: 20px;
-		color: transparent;
-		text-indent: -9999px;
-		overflow: hidden;
-		float: right;
+		display: block;
 	}
 
-	#logo-image {
-		background: url("//assets.moovweb.net/moovweb-marketing/corpsite-prod/v118/images/d_sprite.png") no-repeat 0px -676px;
-		height: 22px;
-		width: 162px;
-		display: block;
+	#m_logo {
+		height: 25%;
+		width: 25%;
+		float: right;
+		padding: 20px;
+
+	}
+
+	#h_logo {
+		float: left;
 	}
 
 	#mainNav {
@@ -36,6 +24,8 @@
 		font-family: arial, helvetica, sans-serif;
 		width: 100%;
 		margin-left: 0 !important;
+		word-wrap:break-word;
+
 	}
 
 
