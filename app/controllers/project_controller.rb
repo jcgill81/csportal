@@ -9,7 +9,7 @@ class ProjectController < ApplicationController
 	end
 
 	def create
-    @project = User.new(params[:user])
+    @project = Project.new(params[:project])
     if @project.save
       # Handle a successful save.
 	else
