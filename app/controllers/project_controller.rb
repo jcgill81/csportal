@@ -9,11 +9,12 @@ class ProjectController < ApplicationController
 	end
 
 	def create
-    @project = Project.new(params[:project])
-    if @project.save
-      # Handle a successful save.
-	else
-    	  render 'new'
+	    @project = Project.new(params[:project])
+    	if @project.save
+    		redirect_to @project
+      	# Handle a successful save.
+		else
+    		render 'new'
     	end
 	end
 

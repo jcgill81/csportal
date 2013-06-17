@@ -2,8 +2,9 @@
 <% provide(:title, 'New Project') %>
 <h1>Create new Project Listing</h1>
 
-<div id="formholder">
+<div id="formholder" class: "box flex column">
 	<%= form_for(@project) do |f| %>
+		<%= render 'shared/error_messages' %>
 
 		<%= f.label :client, "Client Name" %>
 		<%= f.text_field :client %>
@@ -29,6 +30,6 @@
 		<%= f.label :jira, "Jira" %>
 		<%= f.text_field :jira %>		
 
-		<%= f.submit "Create new Project", class:"btn" %>
+		<%= f.submit "Create new Project", class:"btn", :controller => :project, :action => :create %>
 	<% end %>
 </div>

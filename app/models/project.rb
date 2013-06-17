@@ -8,4 +8,13 @@ class Project < ActiveRecord::Base
     project.client = client.downcase,
     project.name = name.downcase }
 
+    validates :client, presence: true
+    validates :name, presence: true
+    validates :team, presence: true
+    validates :am, presence: true
+    validates :pm, presence: true
+    validates :qa, presence: true
+    
+
+
 end
