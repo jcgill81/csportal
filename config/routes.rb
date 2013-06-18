@@ -1,18 +1,29 @@
 Csportal::Application.routes.draw do
 resources :logins
 resources :projects
+resources :sessions, only: [:new, :create, :destroy]
 
   get "on_call/new"
 
   get "on_call/edit"
 
+
+  #Basic Home Nav
   match '/release',     to: 'home#release'
   match '/active',      to: 'home#active'
   match '/oncall',      to: 'home#oncall'
   match '/whose',       to: 'home#whose'
+
+  # On-Call Schedule rotation
   match '/add',         to: 'oncall#new'
   match '/modify',      to: 'oncal#edit'
+
+  #Logins/Sign In Functionality
   match '/signup',      to: 'logins#new'
+  match '/signin',      to: 'sessions#new'
+  match '/signout',     to: 'sessions#destroy', via: :delete
+
+  # LSM Projects list
   match '/entry',       to: 'projects#new'
   match '/list',        to: 'projects#show'
 
@@ -66,7 +77,7 @@ resources :projects
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'home#index'
+   root :to => 'sessions#new'
 
   # See how all your routes lay out with "rake routes"
 
