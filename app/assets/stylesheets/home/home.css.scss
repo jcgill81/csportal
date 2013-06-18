@@ -40,6 +40,21 @@ body {
 	font-style: italic;
 
 	}
+
+	.btn {
+		border: 1px solid #E6E6E6;
+		padding: 20px;
+		word-wrap: normal;
+		margin:	5px;
+		width: 60px;
+		height: 100px;
+		vertical-align: middle;
+		&:hover {
+			background: -webkit-linear-gradient(bottom, rgba(230,230,230,1) 3%,rgba(215,215,215,1) 45%,rgba(200,200,200,1) 70%,rgba(245,245,245,1) 95%);
+			background: linear-gradient(to top, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%);
+			text-decoration: underline;
+		}
+	}
 }
 
 
