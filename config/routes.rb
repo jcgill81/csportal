@@ -13,6 +13,7 @@ resources :sessions, only: [:new, :create, :destroy]
   match '/active',      to: 'home#active'
   match '/oncall',      to: 'home#oncall'
   match '/whose',       to: 'home#whose'
+  match '/root',         to: 'home#index'
 
   # On-Call Schedule rotation
   match '/add',         to: 'oncall#new'
