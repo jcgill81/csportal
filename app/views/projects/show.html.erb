@@ -4,15 +4,19 @@
 <div class="alert alert-<%= key %>"><%= value %></div>
 <% end %>
 
-<% @project.each do |proj| %>
-<div class="show box flex column">
-	<div>Client Name: <%= proj.client  %></div>
-	<div>Project Name:<%= proj.name  %></div>
-	<div>Team Name: <%= proj.team  %></div>
-	<div>Account Manager: <%= proj.am  %></div>
-	<div>Project Manager: <%= proj.pm  %></div>
-	<div>QA Engineer: <%= proj.qa  %></div>
-	<div>Confluence: <%= proj.conf  %></div>
-	<div>Jira: <%= proj.jira  %></div>
+<% provide(:title, @project.name) %>
+
+<div class="column">
+	<h1>Displaying db record <%= @project.id %></h1>
 </div>
-<% end %>
+<div class="column">
+	<h2>Client: <%= @project.client %></h2>
+	<h2>Project Name: <%= @project.name %></h2>
+	<h2>Development Team: <%= @project.team %></h2>
+	<h2>Account Manager: <%= @project.am %></h2>
+	<h2>Project Manager: <%= @project.pm %></h2>
+	<h2>QA Engineer: <%= @project.qa %></h2>
+	<h2>Confluence Page: <%= @project.conf %></h2>
+	<h2>Jira Page: <%= @project.jira %></h2>
+</div>
+
