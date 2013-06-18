@@ -1,0 +1,18 @@
+<% provide(:title, 'Project Information') %>
+
+<% flash.each do |key, value| %>
+<div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+
+<% @project.each do |proj| %>
+<div class="show box flex column">
+	<div>Client Name: <%= proj.client  %></div>
+	<div>Project Name:<%= proj.name  %></div>
+	<div>Team Name: <%= proj.team  %></div>
+	<div>Account Manager: <%= proj.am  %></div>
+	<div>Project Manager: <%= proj.pm  %></div>
+	<div>QA Engineer: <%= proj.qa  %></div>
+	<div>Confluence: <%= proj.conf  %></div>
+	<div>Jira: <%= proj.jira  %></div>
+</div>
+<% end %>

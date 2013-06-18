@@ -1,0 +1,37 @@
+
+<% provide(:title, 'New Project') %>
+<h1>Create new Project Listing</h1>
+
+<div class ="row">
+	<div class="span6 offset3">
+		<%= form_for(@project) do |f| %>
+			<%= render 'shared/error_messages' %>
+
+			<%= f.label :client, "Client Name" %>
+			<%= f.text_field :client %>
+
+			<%= f.label :name, "Project Name" %>
+			<%= f.text_field :name %>
+
+			<%= f.label :team, "Development Team" %>
+			<%= f.text_field :team %>
+
+			<%= f.label :am, "Account Manager" %>
+			<%= f.text_field :am %>
+
+			<%= f.label :pm, "Project Manager" %>
+			<%= f.text_field :pm %>
+
+			<%= f.label :qa, "QA Engineer" %>
+			<%= f.text_field :qa %>
+
+			<%= f.label :conf, "Confluence"%>
+			<%= f.text_field :conf %>		
+
+			<%= f.label :jira, "Jira" %>
+			<%= f.text_field :jira %>		
+
+			<%= f.submit "Create new Project", class:"btn" %>
+		<% end %>
+	</div>
+</div>

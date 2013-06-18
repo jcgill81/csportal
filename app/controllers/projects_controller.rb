@@ -1,4 +1,4 @@
-class ProjectController < ApplicationController
+class ProjectsController < ApplicationController
 
 	def show
   		@project = Project.all
@@ -11,6 +11,7 @@ class ProjectController < ApplicationController
 	def create
 	    @project = Project.new(params[:project])
     	if @project.save
+    		flash[:success] = "Entry created successfuly!"
     		redirect_to @project
       	# Handle a successful save.
 		else
