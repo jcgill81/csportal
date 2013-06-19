@@ -15,7 +15,16 @@
 	    <%= link_to "Confluence", 'https://moovwebconfluence.atlassian.net', class: "navLink", target: "_blank" %>
 	    <%= link_to "Jira", 'https://moovwebconfluence.atlassian.net', class: "navLink", target: "_blank" %>
 	    <% if signed_in? %>
-			<%= link_to "My Account", '#', class: "navLink" %>
+			<li id="fat-menu" class="dropdown navLink">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Account <b class="caret"></b>
+              </a>
+            <ul class="dropdown-menu">
+				<li><%= link_to "Profile", current_user %></li> <li><%= link_to "Settings", '#' %></li>
+				<li class="divider"></li>
+				<li>
+				<%= link_to "Sign out", signout_path, method: "delete" %> </li>
+				</ul>
 		<% else %>
 		<% end %>
 	    </div>
